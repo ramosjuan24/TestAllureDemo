@@ -1,9 +1,18 @@
 package utils.Listeners;
 
-public class Retry  {
+import ambientes.AbstractTest;
+import com.relevantcodes.extentreports.LogStatus;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
+import utils.ExtentReports.ExtentTestManager;
 
-    // implements IRetryAnalyzer
-    /*
+public class Retry implements IRetryAnalyzer{
+
+
+
     private int count = 0;
     private static int maxTry = 1; //Run the failed test 2 times
 
@@ -31,6 +40,4 @@ public class Retry  {
     }
 
 
-}
-*/
 }
